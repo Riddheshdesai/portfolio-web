@@ -1,5 +1,6 @@
 import { Socials } from "@/constants";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
@@ -22,8 +23,20 @@ const Navbar = () => {
         </div>
 
         <div className="flex flex-row gap-10 text-gray-200">
-          <FaLinkedin size={24} />
-          <FaGithub size={24} />
+          <Link
+            href="https://www.linkedin.com/in/riddhesh-desai/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin size={24} />
+          </Link>
+          <Link
+            href="https://github.com/Riddheshdesai"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub size={24} />
+          </Link>
         </div>
       </div>
     </div>
